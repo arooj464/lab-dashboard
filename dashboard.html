@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab Reports Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🏥 Shaukat Khanum</h1>
+    <div class="user-controls">
+      <span>🔔</span>
+      <span>👤</span>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <ul>
+      <li>🏠 Dashboard</li>
+      <li class="active">📄 My Reports</li>
+      <li>👨‍⚕ Doctors</li>
+      <li>📅 Appointments</li>
+      <li>📞 Contact Us</li>
+      <li>🚪 Logout</li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+    <h2>My Lab Reports</h2>
+
+    <!-- Filter Section -->
+    <div class="filters">
+      <select>
+        <option>Filter by Date</option>
+      </select>
+      <select>
+        <option>Filter by Status</option>
+      </select>
+      <input type="text" placeholder="Search test name...">
+    </div>
+
+    <!-- Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Report Date</th>
+          <th>Test Name</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>21 Jun 2025</td>
+          <td>CBC</td>
+          <td><span class="status ready">✅ Ready</span></td>
+          <td>
+            <button class="view">View</button>
+            <button class="download">Download</button>
+          </td>
+        </tr>
+        <tr>
+          <td>18 Jun 2025</td>
+          <td>X-Ray</td>
+          <td><span class="status pending">⏳ Pending</span></td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>15 Jun 2025</td>
+          <td>Blood Sugar</td>
+          <td><span class="status ready">✅ Ready</span></td>
+          <td>
+            <button class="view">View</button>
+            <button class="download">Download</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+</body>
+</html>
